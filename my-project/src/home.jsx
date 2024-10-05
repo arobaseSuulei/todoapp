@@ -55,11 +55,11 @@ export default function Home() {
         <div className={'flex flex-col items-center  gap-6 p-6 max-w-md mx-auto'}>
 
             <h1 className={'text-xl font-bold'}>
-                <b className={'bg-red-400 text-white px-2 py-1 rounded-md'}>To Do</b> easy app
+                <b className={'bg-red-400 text-white px-2 py-1 rounded-md'}>To Do</b> easyy app
             </h1>
 
             <form className={'flex justify-center items-center gap-6 text-xs'}>
-                <input onChange={handleChange} className={'border p-3 w-80'} type={'text'}
+                <input onChange={handleChange} className={'border p-3 w-72'} type={'text'}
                        placeholder={'Add new task ;)...'}/>
                 <button onClick={submitTask}
                         className={tasks.trim() === '' ? 'bg-red-300 p-2 rounded-lg text-white' : 'bg-red-400 p-2 rounded-lg text-white'}>
