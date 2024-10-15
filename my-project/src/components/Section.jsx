@@ -1,19 +1,14 @@
-
-import React, {useState,useEffect} from 'react';
-
+import React, {useEffect, useState} from 'react';
 
 
 
 
-
-export default function Home() {
+export default function Section() {
 
     const [tasks, setTasks] = useState("");
     const [taskList, setTaskList] = useState([]);
 
-    useEffect(() => {
-        document.title = "Donelist | une To do list simple et agréable";
-    }, []);
+
 
 
 
@@ -55,10 +50,10 @@ export default function Home() {
         <div className={'flex flex-col items-center  gap-6 p-6 max-w-md mx-auto'}>
 
             <h1 className={'text-xl font-bold'}>
-                <b className={'bg-red-400  text-white px-2 py-1 rounded-md'}>To do </b> easy app
+                On going, set a tasks
             </h1>
 
-            <form className={'flex justify-center items-center gap-6 text-xs'}>
+            <form className={'flex justify-center text-black items-center gap-6 text-xs'}>
                 <input onChange={handleChange} className={'border p-3 w-72'} type={'text'}
                        placeholder={'Add new task ;)...'}/>
                 <button onClick={submitTask}
